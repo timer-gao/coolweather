@@ -192,7 +192,7 @@ public class WeatherActivity extends AppCompatActivity {
     private void showWeatherInfo(Weather weather){
         if(weather!=null&&"ok".equals(weather.status)){
             String cityName=weather.basic.cityName;
-            String updateTime=weather.basic.update.updateTime.split(" ")[1];
+            String updateTime="发布时间"+weather.basic.update.updateTime.split(" ")[1];
             String degree=weather.now.temperature+"℃";
             String weatherInfo=weather.now.more.info;
             titleCity.setText(cityName);
